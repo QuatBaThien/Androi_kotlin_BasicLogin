@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgr">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="413dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        android:scaleX="1.1"
+        android:scaleY="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shapes"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/wwl_sign_in"
+        android:layout_width="315dp"
+        android:layout_height="72dp"
+        android:background="@drawable/button_sign_in"
+        android:gravity="center"
+        android:text="@string/sign_in"
+        android:textColor="#FAFAFA"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="19dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_vector"
+        app:layout_constraintBottom_toBottomOf="@+id/wwl_sign_in"
+        app:layout_constraintEnd_toEndOf="@+id/wwl_sign_in"
+        app:layout_constraintTop_toTopOf="@+id/wwl_sign_in" />
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="315dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/button_sign_up"
+        android:text="@string/sign_up"
+        android:textColor="@color/btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sign_up"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up"
+        app:layout_constraintTop_toTopOf="@+id/sign_up"
+        app:srcCompat="@drawable/ic_vector_blue" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stroke_1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="134dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="13dp"
+        android:text="Welcome Back"
+        android:textSize="28dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:lineHeight="34dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="315dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wwl_sign_in"
+        app:layout_constraintEnd_toEndOf="@+id/wwl_sign_in"
+        app:srcCompat="@drawable/mask_group"
+        android:elevation="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

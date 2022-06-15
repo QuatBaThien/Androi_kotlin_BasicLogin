@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/drawable/button_round.xml" value="0.194" />
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/drawable/button_sign_in.xml" value="0.1435" />
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/drawable/button_sign_up.xml" value="0.194" />
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/drawable/cycle.xml" value="0.194" />
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/drawable/cycle_pink.xml" value="0.194" />
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/drawable/cycle_pur.xml" value="0.194" />
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/drawable/edit_text_backgr.xml" value="0.256" />
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/drawable/eyes.xml" value="0.3675" />
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/drawable/ic_vector_blue.xml" value="0.256" />
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/layout/activity_contact_list.xml" value="0.29791666666666666" />
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/layout/activity_laughing.xml" value="0.2" />
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/layout/activity_login.xml" value="0.4" />
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/layout/activity_resister.xml" value="0.4341736694677871" />
+        <entry key="..\:/Learn android/LoginActivity/app/src/main/res/layout/recyclerview_row.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

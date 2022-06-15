@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LoginActivity</string>
+    <string name="resister_page">resister page</string>
+    <string name="you_can_check_your_notification_here">You can check your notification here.</string>
+    <string name="Name1">Clinton Mcclure</string>
+    <string name="Name2">Clinton Mcclure2</string>
+    <string name="Name3">Clinton Mcclure3</string>
+    <string name="Name4">Clinton Mcclure4</string>
+    <string name="Name5">Clinton Mcclure5</string>
+    <string name="Name6">Clinton Mcclure6</string>
+    <string name="Name7">Clinton Mcclure7</string>
+    <string name="Name8">Clinton Mcclure8</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="enter_your_email">Enter your email</string>
+</resources>
