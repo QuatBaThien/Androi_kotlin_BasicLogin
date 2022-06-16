@@ -7,14 +7,16 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Patterns.EMAIL_ADDRESS
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
+import androidx.lifecycle.ViewModelProvider
+
+import com.example.loginactivity.data.UserViewModel
+import com.example.loginactivity.data.Users
 import com.example.loginactivity.databinding.ActivityResisterBinding
 import com.google.android.material.textfield.TextInputLayout
+import kotlinx.android.synthetic.main.activity_resister.*
 import java.util.regex.Pattern
 
 
@@ -25,6 +27,7 @@ class Resister : AppCompatActivity() {
     var signUp: Button? = null
     var emailtext: TextView? = null
     var tickImg: ImageView? = null
+    private lateinit var mUserViewModel: UserViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resister)
@@ -61,14 +64,24 @@ class Resister : AppCompatActivity() {
 
             }
         })
+        mUserViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
         signUp!!.setOnClickListener {
                 val intent: Intent = Intent(this, LoginActivity::class.java)
                 val resister_name = binding.signUpEmail.text.toString()
                 val resister_pwd = binding.signUpPwd.text.toString()
                 intent.putExtra("name", resister_name)
                 intent.putExtra("pwd", resister_pwd)
+                insertDatatoDataBase()
                 startActivity(intent)
         }
+    }
+
+    private fun insertDatatoDataBase() {
+        val Email = sign_up_Email.text.toString()
+        val Pwd = sign_up_pwd.text.toString()
+        val user = Users(0,Email,Pwd)
+        mUserViewModel.addUser(user)
+        Toast.makeText(this,"$Email ---- $Pwd",Toast.LENGTH_SHORT).show()
     }
 
 }
